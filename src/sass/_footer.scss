@@ -1,0 +1,22 @@
+.footer {
+  color: #f1f1f1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 1;
+  @media (min-width: 500px) {
+    font-size: 1.2rem;
+  }
+  .footer__link {
+    // color: rgb(252, 140, 215);
+    color: #1d1d1d;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 3rem;
+  padding: 15px 0 15px;
+  background: #1d1d1d;
+  @media (min-width: 500px) {
+    font-size: 4rem;
+    padding: 30px;
+  }
+  @media (min-width: 700px) {
+    font-size: 5rem;
+    padding: 30px;
+  }
+  @media (min-width: 900px) {
+    font-size: 6rem;
+    padding: 30px;
+  }
+}

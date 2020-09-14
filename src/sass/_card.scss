@@ -1,0 +1,62 @@
+@import "./colors";
+
+.fa-palette {
+  color: red;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 600px;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 2%;
+  @media (min-width: 500) {
+    margin: 80px auto;
+  }
+  .card__outer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    .card__tagline {
+      color: $ColorLight;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      @media (min-width: 500) {
+        margin: 20px 0;
+        font-size: 2.2rem;
+      }
+    }
+    .card__inner-container {
+      border-radius: 5px 40px;
+      min-width: 100%;
+      .card__color-swatch {
+        border: 2px solid $ColorLight;
+        box-shadow: 4px 4px $ColorLight;
+        align-self: start;
+        border-radius: 5px 40px;
+        background-clip: padding-box;
+        background-color: #ffffff;
+        height: 180px;
+        width: 180px;
+        @media only screen and (min-width: 500px) {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    }
+    .card__color-code {
+      border: 2px solid $ColorLight;
+      box-shadow: 4px 4px $ColorLight;
+      margin: 20px 0;
+      padding: 5px 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $ColorLight;
+      @media (min-width: 500) {
+        margin: 10px 0;
+        padding: 10px 0;
+      }
+    }
+  }
+}

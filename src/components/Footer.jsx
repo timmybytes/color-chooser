@@ -15,7 +15,7 @@ function Footer() {
           Timothy Merritt
         </a>
         , {year}
-        {" | "}
+        <br />
         <a className="footer__link" href="https://github.com/timmybytes/color-chooser">
           {"Fork on GitHub"} <i class="fa fa-github" aria-hidden="true"></i>
         </a>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Card() {
   const [toggle, setToggle] = useState(false);
-  const [swatchColor, setSwatchColor] = useState("#ffffff");
+  const [swatchColor, setSwatchColor] = useState("#000000");
   const random_hex_color_code = (Math.random() * 0xfffff * 1000000).toString(16);
   const final_color = "#" + random_hex_color_code.slice(0, 6);
 

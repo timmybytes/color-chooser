@@ -3,9 +3,5 @@
 @import "./resets";
 @import "./card";
 @import "./colors";
-
-.app {
-  background-color: $ColorAccent;
-  height: 100vh;
-  width: 100vw;
-}
+@import "./queries";
+@import "./app";

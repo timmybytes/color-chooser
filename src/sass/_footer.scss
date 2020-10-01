@@ -1,4 +1,4 @@
-@import "./colors";
+@import './colors';
 
 .footer {
   color: $ColorLight;
@@ -11,7 +11,8 @@
   line-height: 1.4;
   z-index: 1;
   @media (min-width: 320px) and (min-height: 568px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem;
   }
   @media (min-width: 475px) {
     font-size: 1.2rem;

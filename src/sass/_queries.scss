@@ -1,24 +1,24 @@
-@media (min-width: 320px) and (min-height: 568px) {
-  .header__title {
-    font-size: 3rem;
-    padding: 20px 0 10px;
-  }
-}
-@media (min-width: 375px) and (min-height: 667px) {
-  .header__title {
-    font-size: 3.8rem;
-    padding: 50px 0 10px;
-  }
-}
-@media (min-width: 375px) and (min-height: 812px) {
-  .header__title {
-    font-size: 3.8rem;
-    padding: 120px 0 10px;
-  }
-}
+// @media (min-width: 320px) and (min-height: 568px) {
+//   .header__title {
+//     font-size: 3rem;
+//     padding: 10px 0 10px;
+//   }
+// }
+// @media only screen (max-width: 375px) {
+//   .header__title {
+//     font-size: 3.8rem;
+//     padding: 50px 0 10px;
+//   }
+// }
+// @media (min-width: 375px) and (min-height: 812px) {
+//   .header__title {
+//     font-size: 3.8rem;
+//     padding: 20px 0 10px;
+//   }
+// }
 @media only screen and (min-width: 500px) {
   .card {
-    margin: 80px auto;
+    margin: 0px auto;
     .card__color-swatch {
       height: 300px;
       width: 300px;

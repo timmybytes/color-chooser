@@ -1,4 +1,4 @@
-@import "./colors";
+@import './colors';
 
 .header {
   display: flex;
@@ -17,10 +17,6 @@
     max-width: 120px;
     max-height: 120px;
     margin: 0 auto 0 auto;
-    // position: absolute;
-    // top: 20%;
-    // bottom: 25%;
-    // left: 5%;
   }
   .header__title {
     justify-self: left;
@@ -28,9 +24,13 @@
     text-align: center;
     font-style: italic;
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     color: $ColorBrand;
     background: $ColorDark;
     text-shadow: 3px 3px #00bbf9, 6px 6px #00f5d4, 9px 9px #fee440, 12px 12px #9b5de5;
+    @media (min-width: 200px) and (max-width: 500px) {
+      font-size: 3rem;
+      padding-top: 1rem;
+    }
   }
 }

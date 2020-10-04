@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function Card() {
   const [toggle, setToggle] = useState(false);
   const [swatchColor, setSwatchColor] = useState("#000000");
+  const [isCopied, setIsCopied] = useState(false);
   const random_hex_color_code = (Math.random() * 0xfffff * 1000000).toString(16);
   const final_color = "#" + random_hex_color_code.slice(0, 6);
+  const colorElement = useRef()
 
   function handleClick(e) {
     setToggle(toggle ? null : true);
     setSwatchColor(final_color);
+    setIsCopied(false);
+  }
+
+  function copyToClipboard() {
+    const { current } = colorElement;
+    current.select();
+    document.execCommand("copy");
+    setIsCopied(true);
   }
 
   return (
@@ -22,7 +32,8 @@ function Card() {
             style={{ backgroundColor: swatchColor }}
           ></div>
         </div>
-        <p className="card__color-code">{swatchColor}</p>
+        <input readOnly ref={colorElement} className="card__color-code" value={swatchColor} />
+        <p onClick={copyToClipboard}>{!isCopied ? "Copy To Clipboard" : "Copied"}</p>
       </div>
     </div>
   );

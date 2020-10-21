@@ -1,4 +1,4 @@
-@import "./colors";
+@import './colors';
 
 .fa-palette {
   color: red;
@@ -6,7 +6,7 @@
 
 .card {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   max-height: 600px;
   max-width: 700px;
   margin: 40px auto;
